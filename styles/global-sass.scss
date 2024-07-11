@@ -1,0 +1,46 @@
+@import './mixins.scss';
+.visible-with-animation {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.hidden-with-animation {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.clickable {
+  @include my-clickable(var(--primary), var(--primary-hover), var(--primary-hover-background), false, true);
+}
+
+.clickable-no-padding {
+  @include my-clickable(var(--primary), var(--primary-hover), var(--primary-hover-background), false, false);
+}
+
+.clickable-with-underline {
+  @include my-clickable(var(--primary), var(--primary-hover), var(--primary-hover-background), true, true);
+  padding: 0.6rem 0.25rem;
+}
+
+.team-logo-small {
+  max-height: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

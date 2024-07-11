@@ -1,0 +1,13 @@
+{
+  "create": "Create Franchise",
+  "noData": "You have not created any teams. What are you waiting for? Create a team and find a tournament to play to represent your squad!",
+  "updatedSuccessfully": "Franchise Updated Successfully",
+  "updatedFailure": "An error was encountered while updating the franchise. Please, try again later.",
+  "deletedSuccessfully": "Franchise Successfully Deleted",
+  "deletedFailure": "An error was encountered while trying to delete the franchise. Please, try again later.",
+  "delete.message": "Are you sure you want to delete this franchise? If so, enter the franchise name on the below input and click Ok. <br/> <small><i>Note: All the existing information about participating tournaments will be kept for historical purposes (winning record, players, stats, etc) </i></small>",
+  "registeringToTournament": "Select category you want to register your team on tournament <strong>{{tournament}}</strong>",
+  "unRegisteringToTournament": "Are you sure you want to unregister from the below tournament? <br/><br/> <span><strong>Tournament Name:</strong> {{tournament}}</span><span><strong>Category:</strong> {{category}}</span>",
+  "cannotUnregisterAccepted": "Cannot unregister from the a tournament once the registration has been accepted. If you really would like to unregister your team, you will need to ask the tournament organizer to remove the registration or contact the Clashstats Support Team.",
+  "cannotCopyTeam": "You have two unregistered teams, in order to be able to copy another team you cannot have more than one unregistered team on your franchise. Register one of the teams and then try copying again later."
+}

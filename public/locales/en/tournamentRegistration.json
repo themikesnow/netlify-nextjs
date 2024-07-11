@@ -1,0 +1,18 @@
+{
+  "franchiseSelectionTitle": "Create or select the franchise you want to register below",
+  "selectCategory": "Select the category you want to register your team",
+  "validatingFranchise": "Validating Franchise required information",
+  "validatingTeam": "Validating Team required information",
+  "validatingCategory": "Validating category",
+  "requestingCreation": "Submitting team registration",
+  "waitingForResponse": "Waiting for response",
+  "editFranchiseTeam": "Tournament Registration",
+  "cannotEditRegisteredTeam": "Cannot edit franchise/team already accepted. If you need to make changes to the team you will need to ask the tournament organizer to remove the registration in order to be able to make any changes.",
+  "unRegisteringToTournament": "Are you sure you want to unregister from the tournament?",
+  "unregisterTeam": "Unregister team",
+  "currentRegisteredTeams": "Current Registered Team(s)",
+  "lockChanges": "Prevent tournament organizer from making any changes to your team",
+  "unlockChanges": "Allow tournament organizer to make changes to your team details/roster",
+  "successfullyRegisteredTeam": "Team succesfully registered",
+  "notLoggedIn": "In order to be able to register on this tournament you need to <linkLogin>login</linkLogin>. If you do not have an account you can sign up on this <linkSignUp>link</linkSignUp>."
+}

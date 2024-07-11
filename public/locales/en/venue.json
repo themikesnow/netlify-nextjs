@@ -1,0 +1,9 @@
+{
+  "noMatch": "No Venue Match Found",
+  "detailsVenueTitle": "Venue Details",
+  "editVenue": "Edit Venue",
+  "deleteVenueTitle": "Delete Venue",
+  "deleteVenueBody": "Are you sure you want to delete venue <b><i>{{name}}<i/></b>?",
+  "updatedFailure": "An error was encountered while updating the venue. Please, try again later.",
+  "updatedSuccessfully": "Venue Updated Successfully"
+}

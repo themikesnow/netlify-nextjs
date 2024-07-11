@@ -1,0 +1,11 @@
+{
+  "coach": "Coach",
+  "assistantCoach": "Assistant Coach",
+  "owner": "Owner",
+  "copyTeamBody": "Are you sure you want to copy this team?",
+  "insuranceProvider": "Insurance Provider",
+  "insurancePolicyNumber": "Insurance Policy Number",
+  "preventOrganizerChanges": "Prevent Organizer from making changes to your team",
+  "allowOrganizerChanges": "Allow Organizer to make changes to your team",
+  "removeTournamentRegistration": "Remove team registration from tournament"
+}

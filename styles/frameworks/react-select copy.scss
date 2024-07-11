@@ -1,0 +1,56 @@
+// .react-select-container {
+
+// #my-select {
+//   background-color: red;
+// }
+
+#my-select,
+[id^='select-'] {
+  .custom-select {
+    // background-color: red;
+    &__menu,
+    &__control,
+    &__options {
+      &:hover {
+        cursor: pointer;
+      }
+      background-color: var(--primary-background-color);
+    }
+
+    &__option--is-focused {
+      background-color: var(--primary-background-color);
+    }
+    &__option--is-selected {
+      background-color: var(--react-select-active-color);
+    }
+    &__option {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--react-select-hover-color);
+      }
+    }
+
+    &__indicator-separator {
+      background-color: var(--primary-background-color);
+    }
+
+    &__control {
+      height: 2.65rem;
+      &--is-focused {
+        box-shadow: none;
+        border-color: var(--color-active);
+      }
+    }
+
+    &__menu {
+      border: var(--primary-border);
+    }
+    &__menu-list {
+      // padding: 0;
+    }
+
+    &__single-value {
+      color: var(--primary-font-color);
+    }
+  }
+}

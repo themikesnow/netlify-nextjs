@@ -1,0 +1,20 @@
+{
+  "searchTournamentsTitle": "Recently created tournaments",
+  "yourTournamentsTitle": "Your tournaments",
+  "message": "A total of {{totalElements}} tournaments were found",
+  "noDataTeams": "No team have been registered for this tournament/category.",
+  "registeredTeams": "{{total}} Team(s)",
+  "openTournamentsCheck": "Open tournaments only",
+  "searchTournaments": "Search",
+  "tournamentSearchPlaceHolder": "Search by tournament name",
+  "tournamentLocationPlaceHolder": "Where?",
+  "registrationDeadline": "Until {{deadline}}",
+  "overwriteStandings": "Overwrite Standings",
+  "create": "Create Tournament",
+  "delete.title": "Delete Tournament",
+  "delete.message": "Confirm tournament deletion by entering its name and then clicking the OK button.",
+  "noDataMessage": "No tournaments found... come back later to find newly created tournaments on our platform",
+  "noDataMessageOrganizer": "Welcome to Clashstats! Looks like you do not have any tournaments created yet... what are you waiting for? Create a new tournament and start sharing its stats with the world!!",
+
+  "selectAwardWinner": "Select Award Winner: "
+}

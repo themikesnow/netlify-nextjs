@@ -1,0 +1,333 @@
+@import './variables.scss';
+@import './variables-light.scss';
+@import './variables-dark.scss';
+@import 'normalize.css';
+@import 'react-datez/dist/css/react-datez.css';
+@import 'react-calendar/dist/Calendar.css';
+@import 'react-date-picker/dist/DatePicker.css';
+@import 'nprogress/nprogress.css';
+@import 'react-toastify/dist/ReactToastify.css';
+@import './frameworks/react-toastify.scss';
+@import './frameworks/font-awesome.scss';
+@import './frameworks/font-awesome.scss';
+@import './frameworks/react-select.scss';
+@import './frameworks/react-datez.scss';
+@import './frameworks/react-cookie-consent.scss';
+@import './frameworks/nprogress.scss';
+@import './animations/fade.scss';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  // font-family: Lato, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // font-family: "Raleway", sans-serif;
+  background-color: var(--primary-app-background-color);
+  color: var(--primary-font-color);
+  font-size: 14px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+a {
+  color: var(--primary-link-color);
+
+  text-decoration: none;
+  &:hover {
+    color: var(--primary-hover);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+div[type=button] {   
+  appearance: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom:0;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 2.6rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 2.1rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 1.7rem;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1.3rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media print {
+  .print {
+    opacity: 0;
+    display: none;
+  }
+  body {
+    overflow: visible;
+  }
+
+  .page-break {
+    break-after: always;
+    page-break-after: always;
+
+    display: block;
+    page-break-before: always;
+    clear: both;
+    break-after: page;
+    break-after: always;
+    page-break-before: always;
+    page-break-inside: auto;
+  }
+
+  #modal {
+    overflow: hidden;
+    margin: 0;
+    // .Teams_modalDetails {
+    #print-team-roster,
+    div[class*='title'],
+    div[class*='buttonsContainer'] {
+      display: none;
+    }
+    div[class*='Modal_container'] {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      width: 100vw;
+    }
+    // }
+  }
+
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+
+  // .modal-dialog {
+  //   width: 100% !important;
+  //   max-width: 100% !important;
+  //   margin: 0;
+  // }
+
+  // .modal-body {
+  //   height: 100vh;
+  //   padding: 0;
+  // }
+}
+
+// @media print {
+//   body {
+//     overflow: unset;
+//   }
+// }
+
+.clash-icon {
+  fill: var(--primary-font-color);
+}
+
+.bordered {
+  border: var(--primary-border);
+  border-radius: 0.25rem;
+}
+
+.visible-with-animation {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.hidden-with-animation {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.animation-expand {
+  width: 0px;
+  animation: expand 0.5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.shimmer {
+  animation: shimmerAnimation 2s infinite linear;
+  background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+  background-size: 1000px 100%;
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+@keyframes expand {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// /* CSSTransition classes  */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all 500ms ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all 500ms ease;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all 500ms ease;
+}
+.menu-secondary-exit {
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all 500ms ease;
+}
+
+.slide-right-enter {
+  transform: translateX(120%);
+}
+
+.slide-right-enter-active {
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.slide-right-exit {
+  transform: translateX(0%);
+}
+
+.slide-right-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.slide-left-enter {
+  transform: translateX(-120%);
+}
+
+.slide-left-enter-active {
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.slide-left-exit {
+  transform: translateX(0%);
+}
+
+.slide-left-exit-active {
+  transform: translateX(100%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.button-padding {
+  padding: 0.8rem 0.25rem;
+}
+
+
+
+.fade-in-enter {
+  opacity: 0;
+}
+.fade-in-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.fade-in-exit {
+  opacity: 1;
+}
+.fade-in-exit-active {
+  opacity: 0;
+  transition: opacity 2000ms;
+}

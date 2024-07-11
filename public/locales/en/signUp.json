@@ -1,0 +1,9 @@
+{
+  "confirmPassword": "Confirm Password",
+  "validatingInputs": "Validating Inputs",
+  "requestingAccountCreation": "Submitting account creation",
+  "waitingForResponse": "Waiting for response",
+  "accountSuccessfullyCreated": "Your account has been created successfully! Please verify your email's inbox and follow the instructions to active your account.",
+  "accountCreationFailed": "An error was encountered while creating your account. Please, try again later.",
+  "errorUsernameTaken": "Username/email already registered."
+}

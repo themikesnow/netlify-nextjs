@@ -1,0 +1,17 @@
+.toaster-notification {
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+  svg {
+    color: var(--primary-font-color);
+    // path {
+    fill {
+      // color: white;
+    }
+    // }
+  }
+
+  .toaster-progress-bar {
+    background-color: var(--notification-progress-bar-color) !important;
+    // background: red;
+  }
+}

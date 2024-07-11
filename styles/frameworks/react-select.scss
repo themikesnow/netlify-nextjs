@@ -1,0 +1,66 @@
+#my-select,
+[id^='select-'] {
+  --local-select-background: var(--select-background-color);
+  &.card {
+    --local-select-background: var(--primary-background-color);
+  }
+
+  &.disabled {
+    --local-select-background: var(--primary-gray);
+  }
+  .custom-select {
+    &__menu {
+      background-color: var(--local-select-background);
+      z-index: 2;
+    }
+    &__menu,
+    &__control,
+    &__options {
+      &:hover {
+        cursor: pointer;
+      }
+      background-color: var(--local-select-background);
+    }
+
+    &__option--is-focused {
+      background-color: var(--local-select-background);
+    }
+    &__option--is-selected {
+      background-color: var(--react-select-active-color) !important;
+    }
+    &__option {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--react-select-hover-color);
+      }
+    }
+
+    &__indicator-separator {
+      background-color: var(--local-select-background);
+    }
+
+    &__control {
+      // height: 2.65rem;
+      min-height: 3rem;
+      border: var(--input-border); //var(--primary-border);
+      &--is-focused {
+        box-shadow: none;
+        border-color: var(--color-active);
+      }
+    }
+
+    &__menu {
+      border: var(--primary-border);
+      border: var(--input-border); //var(--primary-border);
+    }
+    &__menu-list {
+      // background-color: red;
+      // z-index: 999999;
+      // padding: 0;
+    }
+
+    &__single-value {
+      color: var(--primary-font-color);
+    }
+  }
+}

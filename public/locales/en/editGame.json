@@ -1,0 +1,12 @@
+{
+  "editPeriodScores.title": "Edit Period Scores",
+  "clearBoxscore.title": "Confirm Boxscore Deletion",
+  "clearBoxscore.body": "Are you sure you want to delete the below boxscore?",
+  "editConfiscatedWinner": "Edit Confiscated Winner",
+  "editConfiscatedWinner.body": "Select winning team:",
+  "confiscatedWinner.selected": "Box score editing is disabled since the below team has been declared the winner by confiscation. If you want to edit/create box scores feel free to remove the select conficated game winner.",
+  "addEditOvertime": "Add/Remove Overtime(s)",
+  "editBoxscore.title": "Edit Boxscore",
+  "invalidScores": "Period scores and players scores do not match. Please, make sure the total points from periods and players are the same.",
+  "missingPlayoffsError": "Playofffs configuration missing, please go to the <Link>Edit Tournament</Link> page and set the playoffs details for this category."
+}
