@@ -36,8 +36,8 @@ const App = ({ Component, pageProps: { ...pageProps } }) => {
   return (
     <>
       <Component {...pageProps} />
-      <ToastContainer className="toaster-container" />
-      <CookieConsent
+      {/* <ToastContainer className="toaster-container" /> */}
+      {/* <CookieConsent
         buttonClasses="button"
         buttonText={t('cookieConsent.accept')}
         containerClasses="cookieConsent"
@@ -48,7 +48,7 @@ const App = ({ Component, pageProps: { ...pageProps } }) => {
         location="bottom"
       >
         {t('cookieConsent.message')}
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   );
 };
