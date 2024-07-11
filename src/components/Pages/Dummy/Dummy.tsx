@@ -1,4 +1,4 @@
-const Dummy: React.FC = ({ value }: { value: string }) => {
+const Dummy: React.FC = ({ value }: { value?: string }) => {
   return (
     <div>
       {value && `The value is: ${value}`}
