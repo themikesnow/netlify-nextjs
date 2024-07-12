@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 
 import { useRouter } from 'next/router';
-import { appWithTranslation, useTranslation } from 'next-i18next';
+import { appWithTranslation } from 'next-i18next';
 import NProgress from 'nprogress';
 import CookieConsent from 'react-cookie-consent';
 import { ToastContainer } from 'react-toastify';
@@ -25,7 +25,7 @@ const App = ({ Component, pageProps: { ...pageProps } }) => {
   }, []);
 
   const router = useRouter();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   useEffect(() => {
     router.events.on('routeChangeStart', () => NProgress.start());
