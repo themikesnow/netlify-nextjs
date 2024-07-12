@@ -9,12 +9,13 @@ const Page = (props) => <Dummy {...props} />;
 export const getStaticProps = async ({ locale, params }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "errors",
-        "tournament",
-        "tournaments",
-      ])),
+      // ...(await serverSideTranslations(locale, [
+      //   "common",
+      //   "errors",
+      //   "tournament",
+      //   "tournaments",
+      // ])),
+      ...(await serverSideTranslations(locale, ["common", "index"])),
       value: params.id[0],
       tab: params.id[1] || "",
     },

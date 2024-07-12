@@ -20,7 +20,6 @@ class MyDocument extends Document {
         <body className="dark">
           <Main />
           <NextScript />
-          
           <div id="modal" />
 
         </body>
