@@ -1,8 +1,10 @@
 // import Head from 'next/head';
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 // import { Tournament as PageComponent } from '@app-pages';
-import { Dummy } from "@app-pages";
+// import { Dummy } from "@app-pages";
+import { Dummy } from "../../src/components/Pages/Dummy/Dummy";
 
 const Page = (props) => <Dummy {...props} />;
 
