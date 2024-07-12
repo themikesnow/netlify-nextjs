@@ -20,10 +20,7 @@ class MyDocument extends Document {
         <body className="dark">
           <Main />
           <NextScript />
-          <Script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt_6pXPu004Rq00DY97j_hReTLTnyRS7E"
-            strategy="beforeInteractive"
-          />
+          
           <div id="modal" />
 
         </body>
