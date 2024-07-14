@@ -15,4 +15,6 @@ included_files = [
   "/var/task/next.config.mjs",
   "/var/task/next-i18next.config.js",
   "/var/task/next-i18next.config.cjs",
+  "/opt/build/repo/next-i18next.config.cjs",
+  "/opt/build/repo/next.config.mjs",
 ]
