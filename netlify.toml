@@ -5,9 +5,10 @@ publish = ".next"
 [functions]
 included_files = [
   "next.config.mjs",
-  "next-i18next.config.cjs",
-  "public/locales/**",
+  "public/locales/en/*.json",
+  "/var/task/next-i18next.config.js",
 ]
+
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
