@@ -6,8 +6,9 @@ publish = ".next"
 node_bundler = "esbuild"
 included_files = [
   "next.config.mjs",
+  "next-i18next.config.cjs",
   "public/locales/en/*.json",
-  "/var/task/next-i18next.config.js",
+  "/var/task/next-i18next.config.cjs",
 ]
 
 
