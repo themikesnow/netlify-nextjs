@@ -1,13 +1,12 @@
 // import Head from 'next/head';
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hello from "../../components/Hello";
+// import { Tournament as PageComponent } from "@app-pages";
 
-// import { Tournament as PageComponent } from '@app-pages';
-// import { Dummy } from "@app-pages";
-import { Dummy } from "../../src/components/Pages/Dummy/Dummy";
+// @ts-ignore
+const Page = (props) => <Hello {...props} />;
 
-const Page = (props) => <Dummy {...props} />;
-
+// @ts-ignore
 export const getStaticProps = async ({ locale, params }) => {
   return {
     props: {
@@ -17,8 +16,7 @@ export const getStaticProps = async ({ locale, params }) => {
       //   "tournament",
       //   "tournaments",
       // ])),
-      ...(await serverSideTranslations(locale, ["common", "index"])),
-      value: params.id[0],
+      id: params.id[0],
       tab: params.id[1] || "",
     },
   };
