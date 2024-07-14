@@ -2,15 +2,17 @@
 command = "npm run build"
 publish = ".next"
 
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
 [functions]
 node_bundler = "esbuild"
 included_files = [
   "next.config.mjs",
   "next-i18next.config.cjs",
+  "next-i18next.config.js",
   "public/locales/en/*.json",
+  "/var/task/next.config.mjs",
+  "/var/task/next-i18next.config.js",
   "/var/task/next-i18next.config.cjs",
 ]
-
-
-[[plugins]]
-package = "@netlify/plugin-nextjs"
