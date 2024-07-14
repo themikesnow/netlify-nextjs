@@ -2,7 +2,6 @@
   "name": "netlify-nextjs",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,6 +20,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "next-i18next": "^15.3.0",
+    "next-translate": "^2.6.2",
+    "next-translate-plugin": "^2.6.2",
     "typescript": "^5"
   }
 }
