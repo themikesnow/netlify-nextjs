@@ -5,6 +5,7 @@ interface HelloProps {
 }
 const Hello: React.FC<HelloProps> = ({ id }) => {
   // const { t } = useTranslation()
+  console.log("HERE");
   return <div>hello {id}</div>;
 };
 
