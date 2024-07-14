@@ -15,7 +15,9 @@
 
 // const __filename = url.fileURLToPath(import.meta.url);
 
+console.log('SETTING PATH')
 process.env.I18NEXT_DEFAULT_CONFIG_PATH = __filename;
+console.log('SETTING PATH', __filename)
 
 // /** @type {import('next-i18next').UserConfig} */
 // const i18Config = {
