@@ -3,6 +3,7 @@ command = "npm run build"
 publish = ".next"
 
 [functions]
+node_bundler = "esbuild"
 included_files = [
   "next.config.mjs",
   "public/locales/en/*.json",
