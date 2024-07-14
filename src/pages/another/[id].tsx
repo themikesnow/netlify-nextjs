@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hello from "../../components/Hello";
 // import { Tournament as PageComponent } from "@app-pages";
 
@@ -10,12 +10,7 @@ const Page = (props) => <Hello {...props} />;
 export const getStaticProps = async ({ locale, params }) => {
   return {
     props: {
-      // ...(await serverSideTranslations(locale, [
-      //   "common",
-      //   "errors",
-      //   "tournament",
-      //   "tournaments",
-      // ])),
+      ...(await serverSideTranslations(locale, ["common"])),
       id: params.id[0],
       tab: params.id[1] || "",
     },

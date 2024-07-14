@@ -1,6 +1,11 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import { appWithTranslation } from "next-i18next";
+// import nextI18NextConfig from "../../next-i18next.config.mjs";
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;
-}
+};
+
+// export default appWithTranslation(App, nextI18NextConfig);
+export default appWithTranslation(App);
